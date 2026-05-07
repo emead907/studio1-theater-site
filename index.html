@@ -28,7 +28,7 @@
       <a href="#">About</a>
       <a href="#summer">Summer Camp</a>
       <a href="#production">Get Involved</a>
-      <a href="#">Contact</a>
+      <a href="#contact">Contact</a>
 
       <a href="#" class="register-btn">Register</a>
     </nav>
@@ -261,7 +261,7 @@
 
 <!-- CONTACT -->
 
-<section class="contact-section">
+<section class="contact-section" id="contact">
 
     <div class="contact-left">
   
@@ -319,13 +319,19 @@
   
       <h3>Send Us a Message</h3>
   
-      <form>
+     <form
+  action="https://formspree.io/f/mykodjlv"
+  method="POST"
+>
   
-        <input type="text" placeholder="Your Name">
+        <input type="text" name="name" placeholder="Your Name">
   
-        <input type="email" placeholder="Your Email">
+      
+        <input type="email" name="email" placeholder="Email">
+      
+
+        <input type="message" name="message" placeholder="Message">
   
-        <textarea placeholder="Your Message"></textarea>
   
         <button type="submit">
           Send Message →
