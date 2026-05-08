@@ -1450,3 +1450,30 @@ footer p{
   font-size:21px;
   max-width:650px;
 }
+
+@media(max-width:900px){
+
+  .hero{
+    min-height:auto;
+    padding:30px 5% 50px;
+    grid-template-columns:1fr;
+    text-align:center;
+  }
+
+  .hero-right{
+    display:none;
+  }
+
+  .hero h2{
+  font-size:44px;
+  line-height:.95;
+  word-break:keep-all;
+}
+
+  .hero p{
+    font-size:20px;
+    max-width:100%;
+    margin:0 auto 24px;
+  }
+
+}
