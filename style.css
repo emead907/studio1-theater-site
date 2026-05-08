@@ -16,9 +16,45 @@ body{
 .hero h2{
   font-size:68px;
 }
+.hero-image::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:radial-gradient(circle, rgba(255,211,56,.22), transparent 65%);
+  z-index:-1;
+}
+.hero-image::before{
+  content:"";
+  position:absolute;
+  width:500px;
+  height:500px;
+  background:radial-gradient(
+    circle,
+    rgba(255,211,56,.22) 0%,
+    rgba(255,79,147,.12) 35%,
+    transparent 70%
+  );
+
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  z-index:-1;
+}
 
 .hero-image{
-  height:380px;
+  height:730px;
+  border-radius:40px;
+
+  background-image:url("images/hero-kids2.png");
+  background-size:contain;
+  background-repeat:no-repeat;
+  background-position:center bottom;
+  position:relative;
+
+  transform:scale(1.45);
+  transform-origin:center;
+  transform:scale(1.45) translateY(-180px);
+   rotate:-2deg;
 }
 
 /* FUN NAVIGATION */
@@ -26,15 +62,16 @@ body{
 .fun-nav{
   display:flex;
   align-items:center;
-  gap:34px;
+  gap:28px;
   flex-wrap:wrap;
 }
+
 
 .fun-nav a{
   position:relative;
   color:white;
   text-decoration:none;
-  font-size:22px;
+  font-size:18px;
   font-weight:900;
   text-transform:uppercase;
   transition:.2s;
@@ -49,32 +86,36 @@ body{
 .fun-nav a span{
   position:absolute;
   left:0;
-  bottom:-10px;
-  height:5px;
+
+ 
   border-radius:999px;
   transform:rotate(-2deg);
+   height:4px;
+  bottom:-8px;
 }
 
 /* COLORS */
 
 .nav-home span{
-  width:52px;
+  width:85px;
   background:#ffd338;
 }
 
 .nav-pink span{
-  width:78px;
+  width:70px;
   background:#ff7a2f;
 }
 
 .nav-green span{
-  width:110px;
+  width:105px;
   background:#9ad93a;
+  transform:rotate(1deg);
 }
 
 .nav-blue span{
-  width:70px;
+ width:65px;
   background:#00c4ff;
+   transform:rotate(-3deg);
 }
 
 /* REGISTER BUTTON */
@@ -102,7 +143,7 @@ body{
 }
 
 .site-logo {
-  max-height: 145px;
+  max-height: 170px;
   width: auto;
   display: block;
 }
@@ -157,7 +198,7 @@ body{
   
   .header-title-logo img {
     display: block !important;
-    max-height: 70px !important;
+    max-height: 100px !important;
     width: auto !important;
   }
 
@@ -247,17 +288,7 @@ html{
   font-weight:800;
 }
 
-.hero-image{
-  background:#173d75;
-  border-radius:30px;
-  height:500px;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  font-size:32px;
-  font-weight:800;
-  border:5px dashed white;
-}
+
 
 
 /* NEW SUMMER CAMP SECTION */
@@ -1075,10 +1106,7 @@ footer p{
   min-height:auto;
 }
 
-.logo img{
-  height:95px;
-  width:auto;
-}
+
 
 .hero{
   min-height:calc(100vh - 115px);
@@ -1102,10 +1130,6 @@ footer p{
   max-width:650px;
 }
 
-.hero-image{
-  height:390px;
-  max-height:42vh;
-}
 
 .hero-left{
   transform:translateY(-20px);
@@ -1138,7 +1162,7 @@ footer p{
   }
 
   .logo img{
-    height:72px;
+    height: 115px;
     width:auto;
   }
 
@@ -1378,4 +1402,50 @@ footer p{
     font-size:16px;
   }
 
+}
+
+/* FINAL HERO HEIGHT + KIDS ALIGNMENT FIX */
+
+.hero{
+  min-height:calc(100vh - 120px);
+  max-height:calc(100vh - 120px);
+  padding:0 5%;
+  overflow:hidden;
+  display:grid;
+  grid-template-columns:1fr 1.25fr;
+  align-items:end;
+}
+
+.hero-left{
+  align-self:center;
+  transform:translateY(-50px);
+}
+
+.hero-right{
+  height:100%;
+  display:flex;
+  align-items:flex-end;
+  justify-content:flex-end;
+  overflow:hidden;
+}
+
+.hero-image{
+  height:70%;
+  width:100%;
+  background-size:contain;
+  background-repeat:no-repeat;
+  background-position:center bottom;
+  transform:scale(1.35);
+  transform-origin:bottom center;
+  margin-bottom:0;
+}
+
+.hero h2{
+  font-size:64px;
+  line-height:.92;
+}
+
+.hero p{
+  font-size:21px;
+  max-width:650px;
 }
