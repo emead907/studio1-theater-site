@@ -64,6 +64,7 @@ body{
   align-items:center;
   gap:28px;
   flex-wrap:wrap;
+   transform:translateY(-25px);
 }
 
 
