@@ -1114,3 +1114,268 @@ footer p{
 .hero-right{
   transform:translateY(-10px);
 }
+
+/* =========================
+   MOBILE RESPONSIVE FIXES
+========================= */
+
+@media(max-width:900px){
+
+  /* NAVBAR */
+
+  .navbar{
+    padding:18px 5% 10px;
+    flex-wrap:wrap;
+    gap:20px;
+    justify-content:center;
+    text-align:center;
+  }
+
+  .logo{
+    width:100%;
+    display:flex;
+    justify-content:center;
+  }
+
+  .logo img{
+    height:72px;
+    width:auto;
+  }
+
+  /* ONLY KEEP REGISTER BUTTON */
+
+  .fun-nav{
+    width:100%;
+    justify-content:center;
+  }
+
+  .fun-nav a:not(.register-btn){
+    display:none;
+  }
+
+  .register-btn{
+    font-size:18px;
+    padding:14px 22px;
+    margin-left:0;
+  }
+
+  /* HERO */
+
+  .hero{
+    grid-template-columns:1fr;
+    text-align:center;
+    padding:35px 5% 45px;
+    min-height:auto;
+    gap:35px;
+  }
+
+  .hero-left{
+    transform:none;
+  }
+
+  .hero-right{
+    transform:none;
+  }
+
+  .hero h2{
+    font-size:52px;
+    line-height:.95;
+    margin-bottom:22px;
+  }
+
+  .hero p{
+    font-size:20px;
+    line-height:1.5;
+    max-width:100%;
+    margin-bottom:24px;
+  }
+
+  .hero-image{
+    height:300px;
+    max-height:none;
+    font-size:28px;
+  }
+
+  /* ABOUT */
+
+  .about-fun-section{
+    grid-template-columns:1fr;
+    gap:35px;
+    padding:65px 5%;
+  }
+
+  .about-copy h2{
+    font-size:42px;
+  }
+
+  .about-copy p{
+    font-size:20px;
+  }
+
+  .about-highlight-grid{
+    grid-template-columns:1fr;
+  }
+
+  /* SUMMER CAMP */
+
+  .summer-camp-new{
+    grid-template-columns:1fr;
+    gap:40px;
+    padding:70px 5%;
+  }
+
+  .summer-left h2{
+    font-size:44px;
+  }
+
+  .camp-description{
+    font-size:20px;
+  }
+
+  .camp-details-row{
+    grid-template-columns:1fr;
+  }
+
+  .camp-detail-card h3{
+    font-size:26px;
+  }
+
+  .camp-detail-card p{
+    font-size:20px;
+  }
+
+  .summer-expect-card{
+    transform:none;
+    padding:32px;
+  }
+
+  .summer-expect-card h3{
+    font-size:34px;
+  }
+
+  .summer-expect-card li{
+    font-size:20px;
+  }
+
+  /* PRODUCTION SECTION */
+
+  .production-section{
+    grid-template-columns:1fr;
+    gap:45px;
+    padding:75px 5%;
+  }
+
+  .production-content h2{
+    font-size:52px;
+  }
+
+  .production-content p{
+    font-size:20px;
+  }
+
+  .timeline-item{
+    padding:20px;
+  }
+
+  .timeline-item h3{
+    font-size:24px;
+  }
+
+  .timeline-item p{
+    font-size:17px;
+  }
+
+  .timeline-icon{
+    min-width:60px;
+    height:60px;
+    font-size:28px;
+  }
+
+  /* CONTACT */
+
+  .contact-section{
+    grid-template-columns:1fr;
+    gap:45px;
+    padding:75px 5%;
+  }
+
+  .contact-left h2{
+    font-size:48px;
+  }
+
+  .contact-left p{
+    font-size:20px;
+  }
+
+  .contact-form-box{
+    padding:30px;
+  }
+
+  .contact-form-box h3{
+    font-size:34px;
+  }
+
+  /* REGISTRATION PAGES */
+
+  .registration-header h1,
+  .summer-registration-header h1,
+  .production-registration-header h1{
+    font-size:48px;
+  }
+
+  .registration-header p,
+  .summer-registration-header p,
+  .production-registration-header p{
+    font-size:20px;
+  }
+
+  .summer-registration-details{
+    grid-template-columns:1fr;
+  }
+
+  .production-experience-grid{
+    grid-template-columns:1fr;
+  }
+
+  .production-info-box{
+    padding:32px;
+  }
+
+  .production-info-box h2{
+    font-size:34px;
+  }
+
+  .production-info-box p{
+    font-size:19px;
+  }
+
+  /* IFRAME */
+
+  iframe{
+    min-height:1350px;
+  }
+
+  .registration-frame-wrapper{
+    padding:10px;
+    border-radius:24px;
+  }
+
+  .registration-frame-wrapper iframe{
+    border-radius:18px;
+  }
+
+  /* FOOTER */
+
+  .site-footer{
+    padding:40px 5%;
+  }
+
+  .footer-logo{
+    height:70px;
+  }
+
+  .site-footer p{
+    font-size:16px;
+  }
+
+}
